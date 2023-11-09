@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: s-lu-wildcard-test
+  namespace: s-lu-test
+spec:
+  secretName: s-lu-wildcard
+  issuerRef:
+    kind: ClusterIssuer
+    name: wildcard-zerossl
+  commonName: '*.dev.s-lu.com'
+  dnsNames:
+    - '*.dev.s-lu.com'
