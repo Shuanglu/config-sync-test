@@ -5,4 +5,4 @@ metadata:
 spec:
   selector:
     matchLabels:
-      location: asia-northeast-1
+      location: asia-northeast1
